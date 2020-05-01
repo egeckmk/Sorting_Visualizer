@@ -3,16 +3,12 @@ import {getMergeSortAnimations} from '../sortingAlgorithms/sortingAlgorithms.js'
 import './SortingVisualizer.css';
 import { Link } from 'react-router-dom'
 
-// Change this value for the speed of the animations.
 const ANIMATION_SPEED_MS = 1;
 
-// Change this value for the number of bars (value) in the array.
 const NUMBER_OF_ARRAY_BARS = 230;
 
-// This is the main color of the array bars.
 const PRIMARY_COLOR = '#2D3748';
 
-// This is the color of array bars that are being compared throughout the animations.
 const SECONDARY_COLOR = '#E53E3E';
 
 export default class SortingVisualizer extends React.Component {
@@ -104,6 +100,5 @@ export default class SortingVisualizer extends React.Component {
 }
 
 function randomIntFromInterval(min, max) {
-  // min and max included
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
